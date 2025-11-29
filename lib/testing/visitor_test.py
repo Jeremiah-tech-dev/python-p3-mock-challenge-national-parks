@@ -18,16 +18,16 @@ class TestVisitor:
         visitor = Visitor("Bob")
         assert isinstance(visitor.name, str)
 
-        # does not mutate name if value is not a string
+        # des not mutate name if value is not a string
         # comment out the next two lines if using Exceptions
         visitor.name = 2
         assert visitor.name == "Bob"
 
-        # does mutate name if value is a valid string
+        # does mutate nme if value is a valid string
         visitor.name = "Steve"
         assert visitor.name == "Steve"
 
-        # uncomment the next two lines if using Exceptions
+        # uncomment the next two lins if using Exceptions
         # with pytest.raises(Exception):
         #     Visitor(2)
 
